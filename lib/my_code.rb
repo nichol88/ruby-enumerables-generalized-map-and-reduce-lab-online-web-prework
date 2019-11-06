@@ -1,5 +1,13 @@
 # Your Code Here
 def map(array, block)
   count = 0
-  yield
+  while count < array.length
+    yield
+  end
+
+end
+
+
+map() do |b|
+
 end
