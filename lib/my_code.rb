@@ -3,8 +3,8 @@ def map(array)
   result = []
   count = 0
   while count < array.length
-    yield
-    result.push(n)
+    yield(array[count])
+    
     count += 1
   end
   result
