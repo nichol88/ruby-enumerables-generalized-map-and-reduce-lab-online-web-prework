@@ -25,8 +25,6 @@ def reduce(array, starting_point = 0)
 
     yield(total, cur_num)
 
-
-
     count += 1
   end
   total
