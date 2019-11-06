@@ -15,10 +15,12 @@ def reduce(array, starting_point = 0)
   count = 0
   total = starting_point
   while count < array.length
+
     cur_num = array[count]
     puts "#{count} : Current num: #{cur_num}"
+    puts "Total: #{total}"
     yield(cur_num, total)
-
+    
     count += 1
   end
   total
