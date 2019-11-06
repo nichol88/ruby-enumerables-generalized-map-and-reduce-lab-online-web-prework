@@ -11,6 +11,13 @@ def map(array)
 end
 
 
-def reduce(array)
-
+def reduce(array, starting_point = 0)
+  result = []
+  count = 0
+  total = 0
+  while count < array.length
+    yield array[count]
+    count += 1
+  end
+  total
 end
