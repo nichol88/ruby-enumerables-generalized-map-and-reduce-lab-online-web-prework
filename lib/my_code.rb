@@ -1,13 +1,8 @@
 # Your Code Here
-def map(array, block)
+def map(array)
   count = 0
   while count < array.length
     yield
   end
-
-end
-
-
-map() do |b|
 
 end
