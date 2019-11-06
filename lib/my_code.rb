@@ -21,6 +21,8 @@ def reduce(array, starting_point = 0)
     puts "#{count} : Current num: #{cur_num}"
     puts "Total: #{total}"
 
+    total += cur_num
+
     yield(total, cur_num)
 
 
