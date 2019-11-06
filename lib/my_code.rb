@@ -13,10 +13,10 @@ end
 
 def reduce(array, starting_point = 0)
   count = 0
-  total = starting_point
+  total = 0
   while count < array.length
     cur_num = array[count]
-    yield(cur_num, total)
+    yield(cur_num, starting_point)
     count += 1
   end
   total
