@@ -5,5 +5,4 @@ def map(array)
     yield
     count += 1
   end
-
 end
