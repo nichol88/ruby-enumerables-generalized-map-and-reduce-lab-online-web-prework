@@ -14,7 +14,10 @@ end
 def reduce(array, starting_point = 0)
   result = true
   count = 0
+  total = starting_point
+
   while count < array.length
+
     yield(array[count])
     count += 1
   end
