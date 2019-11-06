@@ -4,7 +4,7 @@ def map(array)
   count = 0
   while count < array.length
     cnum = array[count]
-    yield(cnum)
+    cnum = yield(cnum)
     result.push(cnum)
     count += 1
   end
