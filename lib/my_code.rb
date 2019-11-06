@@ -23,6 +23,10 @@ def reduce(array, starting_point = 0)
 
     total = yield(cur_num, total)
 
+    if !total
+      total = false
+    end
+
     count += 1
   end
   total
